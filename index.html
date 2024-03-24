@@ -1,56 +1,44 @@
+<!DOCTYPE html> <!-- Correct DOCTYPE declaration -->
+<html> <!-- Start of the HTML document should be at the top -->
 
-    <style>
+<head>
+  <style>
+    .button, .twitch-button {
+      font-family: Arial;
+      border-radius: 2px;
+      border-style: none;
+      height: 63px;
+      width: 122px;
+      transition: transform 0.3s ease; /* Smooth transition for the transform effect */
+    }
+
     .button {
-        font-family:Arial;
-        background-color:red;
-        border-radius:2px;
-        border-style:none;
-        height:63px;
-        width:122px;
-       transition: transform 0.3s ease; /* Smooth transition for the transform effect */
-     } 
-   .button-hover {
-         transform: scale(2); /* Scale the button to 2x its size on hover */
-}
-        
-.twitch-button {
-        font-family:Arial;
-        background-color:red;
-        border-radius:2px;
-        border-style:none;
-        height:63px;
-        width:122px;
-       transition: transform 0.3s ease; /* Smooth transition for the transform effect */
-     } 
+      background-color: red;
+    }
 
+    .button:hover, .twitch-button:hover { /* Corrected the hover pseudo-class */
+      transform: scale(2); /* Scale the button to 2x its size on hover */
+    }
 
-     .twitch-button-hover {
-         transform: scale(2); /* Scale the button to 2x its size on hover */
-}
-    /* smooth af */
-    
-
-    </style>
+    .twitch-button {
+      background-color: #6441a5;
+      background-image: url('https://example.com/twitch-logo.png'); /* Corrected the URL and its format */
+    }
+  </style>
 </head>
 
-  <body>
-
-<a href="https://youtube.com/@overkillorYT">
-  <button>Youtube Chanel</button>
-</a>
-
-<a href="https://twitch.tv/overkilloryt">
-    <button class="twitch-button">Twitch Channel</button>
-</a>
-
-<p1>
- GG
-</p1>
 <body>
+  <a href="https://youtube.com/@overkillorYT">
+    <button class="button">Youtube Channel</button> <!-- Added the "button" class -->
+  </a>
 
+  <a href="https://twitch.tv/overkilloryt">
+    <button class="twitch-button">Twitch Channel</button>
+  </a>
 
-<html>
-</DOCTYPE! html>
+  <p> <!-- Corrected the paragraph tag -->
+    GG
+  </p>
+</body>
 
-
-
+</html> <!-- Correct end of the HTML document -->
