@@ -20,9 +20,23 @@
       transform: scale(2); /* Scale the button to 2x its size on hover */
     }
 
-    .twitch-button {
-      background-color: #6441a5;
-      background-image: url(download.png); /* Corrected the URL and its format */
+    
+     .twitch-button {
+  background-image: url(download.png); /* Ensure the path is correct */
+  background-size: cover; /* or 'contain' depending on your preference */
+  background-position: center; /* Center the background image */
+  /* background-color: #6441a5; /* Optional: remove or keep based on your design */
+  border-radius: 2px;
+  border-style: none;
+  height: 125.5px;
+  width: 47px;
+  transition: transform 0.3s ease; /* Smooth transition for the transform effect */
+  background-color: #6441a4;
+  font-size: 2vw; 
+
+}
+
+
 
     }
   </style>
