@@ -59,3 +59,37 @@
 
 </body>
 </html> <!-- Correct end of the HTML document -->
+<javascript>
+  document.getElementById('watchAdBtn').addEventListener('click', function() {
+    // Display the ad to the user somehow. This part is pseudo-code since it depends on the ad service.
+    showAd();
+
+    // Assuming `adCompleted` is a function or a way to check if the ad has finished. This could be a callback or an event listener, depending on the ad service.
+    adCompleted(function() {
+        // Hide the ad container
+        document.getElementById('adContainer').style.display = 'none';
+        
+        // Show the link
+        document.getElementById('lockedLink').style.display = 'block';
+    });
+});
+
+function showAd() {
+    // This function would integrate with your ad service to display the ad.
+    // For demonstration, let's simulate an ad by just waiting a few seconds.
+    setTimeout(function() {
+        // Simulating ad completion after 5 seconds.
+        adCompleted();
+    }, 5000);
+
+    // Show ad container
+    document.getElementById('adContainer').style.display = 'block';
+}
+
+function adCompleted(callback) {
+    // Placeholder for actual ad completion logic.
+    // In real scenarios, this would be triggered by the ad service once the ad is fully watched.
+    callback();
+}
+
+</javascript>
